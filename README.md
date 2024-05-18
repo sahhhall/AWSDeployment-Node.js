@@ -109,8 +109,7 @@ Follow this guide:
 Follow these steps to install Node.js, clone your project repository, install dependencies, and set up MongoDB:
 
 Install Node.js:
-Follow this guide to install Node.js on your Ubuntu server:
-How to Install Node.js on Ubuntu
+[Follow this guide to install Node.js on your Ubuntu server](https://www.freecodecamp.org/news/how-to-install-node-js-on-ubuntu/#:~:text=After%20installing%20Node%20and%20NPM,Hello%20World%22%20type%20Node%20project.&text=Now%20run%20the%20setup%20with,a%20new%20file%20called%20app)
 
 Clone Your Project Repository:
 git clone `https://github.com/your-username/your-repo.git`
