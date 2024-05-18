@@ -15,7 +15,7 @@
 
 1. In the **EC2 Dashboard**, click on "Launch Instance" to create a new EC2 instance.
 2. **What is EC2?**  
-   EC2 (Elastic Compute Cloud) provides scalable computing capacity in the AWS cloud. It enables organizations to develop and deploy applications without the need for upfront commitments. Unlike on-premises infrastructure, where you need to invest funds before creating instances, EC2 instances handle all the hardware and connectivity requirements automatically.
+   EC2 (Elastic Compute Cloud) provides scalable computing capacity in the AWS cloud. It enables organizations to develop and deploy applications without the need for upfront commitments. Unlike on-premises infrastructure, where you need to invest funds before creating app serer, EC2 instances handle all the hardware and connectivity requirements automatically.
 
 #### **Choose an Amazon Machine Image (AMI)**
 
@@ -55,7 +55,7 @@
 
 **Follow the steps in this tutorial to set up a Node.js application for production on Ubuntu 22.04:**
 
-[How To Set Up a Node.js Application for Production on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-22-04)
+[How To Set Up a Node.js Application for Production on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu)
 
 ### 1. Initial Server Setup for Ubuntu
 Complete the steps in the "Initial Server Setup with Ubuntu 22.04" section, which includes updating the server, creating a new user (optional), and setting up a basic firewall.
@@ -84,7 +84,19 @@ Follow this guide:
 [How To Secure Nginx with Let's Encrypt on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-22-04)
 
 ### 6. Installing Node.js
-Install Node.js on your server by following this guide:
-[How to Install Node.js on Ubuntu](https://www.freecodecamp.org/news/how-to-install-node-js-on-ubuntu/#:~:text=After%20installing%20Node%20and%20NPM,Hello%20World%22%20type%20Node%20project.&text=Now%20run%20the%20setup%20with,a%20new%20file%20called%20app)
+Follow these steps to install Node.js, clone your project repository, install dependencies, and set up MongoDB:
+
+Install Node.js:
+Follow this guide to install Node.js on your Ubuntu server:
+How to Install Node.js on Ubuntu
+
+Clone Your Project Repository:
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+
+Install NPM Dependencies:
+Start Your Node.js Application:
+
+To use PM2 to manage your Node.js application and ensure it continues running even after closing the terminal :)
 
 Feel free to provide the next step or any additional instructions!
