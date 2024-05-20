@@ -155,6 +155,7 @@ mkdir: Make directory
 mv: Move file
 cp: Copy file
 rm: Remove file
+cat: create a file , display, copy content of one file to another file
 touch: Create file
 clear: Clear terminal
 wget: Download file
