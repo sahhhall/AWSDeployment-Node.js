@@ -3,12 +3,12 @@
 
 
 ## AWS (Amazon Web Services)
-AWS is a cloud computing platform provided by Amazon.
+
 <div style="text-align:center;">
   <img src="/images/aws.webp" alt="AWS" />
 </div>
 
-It consists of various remote computing services like Amazon EC2 instances, various types of databases, and networking options.
+AWS is a cloud computing platform provided by Amazon. It consists of various remote computing services like Amazon EC2 instances, various types of databases, and networking options.
 
 ## AWS EC2 (Elastic Compute Cloud)
 Amazon EC2 is Amazon Elastic Cloud Computing. This is a service where Amazon provides us a server where we can deploy our application for an absolute minimum cost, and it takes very little time to do so.
