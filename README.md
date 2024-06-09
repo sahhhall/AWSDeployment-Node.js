@@ -102,6 +102,15 @@ Follow this guide to install Nginx on your Ubuntu server:
 ### 5. Securing Nginx with Let's Encrypt
 Use Let's Encrypt to obtain a free SSL certificate and secure your Nginx server.
 
+```bash
+sudo snap install --classic certbot
+
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+
+sudo certbot --nginx -d example.com -d www.example.com
+
+```
+
 Follow this guide:
 [How To Secure Nginx with Let's Encrypt on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-22-04)
 
