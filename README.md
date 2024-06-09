@@ -1,6 +1,23 @@
 
 # Steps to Deploy a Node.js Application
 
+
+## AWS (Amazon Web Services)
+AWS is a cloud computing platform provided by Amazon.
+![AWS](/images/aws.webp)
+It consists of various remote computing services like Amazon EC2 instances, various types of databases, and networking options.
+
+## AWS EC2 (Elastic Compute Cloud)
+Amazon EC2 is Amazon Elastic Cloud Computing. This is a service where Amazon provides us a server where we can deploy our application for an absolute minimum cost, and it takes very little time to do so.
+![EC2](/images/ec2.webp)
+By providing the service of AWS EC2, Amazon is giving us an easy way to launch our application without worrying about the bare metal hardware stuff and the networking part.
+
+## Linux AMI
+An Amazon Machine Image (AMI) is a pre-configured virtual machine image, available in the Amazon Web Services (AWS) ecosystem, that is used to launch an instance.
+![Linux AMI](/images//AMI.webp)
+A Linux AMI comes pre-installed with a Linux operating system. Some of the most popular Linux distributions available as AMIs on AWS are Ubuntu and Amazon Linux.
+
+
 ## Table of Contents
 * [General Info](#general-info)
 * [AWS setup](#create-an-aws-account)
