@@ -1,75 +1,86 @@
----
 
-### **Create an AWS Account**
-> Steps to Deploy a Node.js Application
+# Steps to Deploy a Node.js Application
+
+## Table of Contents
+* [General Info](#general-info)
+* [AWS setup](#create-an-aws-account)
+* [Initial Server Setup for Ubuntu](#initial-server-setup-for-ubuntu)
+* [Setting Up a Domain Name](#setting-up-a-domain-name)
+* [Enabling Security](#enabling-security)
+* [Installing Nginx](#installing-nginx)
+* [Securing Nginx with Let's Encrypt](#securing-nginx-with-lets-encrypt)
+* [Installing Node.js](#installing-nodejs)
+* [Nginx Commands](#nginx-commands)
+* [PM2 Commands](#pm2-commands)
+* [Linux Commands](#linux-commands)
+
+## General Info
+This guide provides a comprehensive overview of setting up a Node.js application on AWS EC2, including the necessary configurations and security measures.
 
 
-
+## Create an AWS Account
 1. **Visit the AWS Website**: Navigate to the AWS homepage and locate the "Create an AWS Account" option.
-   
 2. **Begin Account Creation**: Click on "Create an AWS Account" and follow the prompts to initiate the registration process.
-
 3. **Enter Account Information**: Provide your email address, a secure password, and other necessary details as prompted.
-
 4. **Payment Information**: Input your credit card details for billing purposes. Note that some services may offer a free tier for new users.
 
    
 ### **Take EC2 Dashboard**
 
-1. **Access AWS Management Console**: Log in to the AWS Management Console using your newly created account credentials.
+**Access AWS Management Console**: Log in to the AWS Management Console using your newly created account credentials.
 
-2. **Navigate to EC2 Dashboard**: From the console dashboard, locate and select the EC2 service to enter the EC2 Dashboard.
+**Navigate to EC2 Dashboard**: From the console dashboard, locate and select the EC2 service to enter the EC2 Dashboard.
 
    
 ### **Launch an EC2 Instance**
 
-1. **Initiate Instance Creation**: Within the EC2 Dashboard, click on "Launch Instance" to commence the creation of a new EC2 instance.
+**Initiate Instance Creation**: Within the EC2 Dashboard, click on "Launch Instance" to commence the creation of a new EC2 instance.
 
-2. **Understanding EC2**: EC2, or Elastic Compute Cloud, provides scalable computing capacity in the AWS cloud, enabling organizations to develop and deploy applications without upfront commitments. It automates hardware and connectivity requirements, streamlining the deployment process.
+**Understanding EC2**: EC2, or Elastic Compute Cloud, provides scalable computing capacity in the AWS cloud, enabling organizations to develop and deploy applications without upfront commitments. It automates hardware and connectivity requirements, streamlining the deployment process.
 
    
 ### **Choose an Amazon Machine Image (AMI)**
 
-1. **Select Suitable AMI**: Choose an appropriate Amazon Machine Image (AMI) that aligns with your application requirements. Common choices include Amazon Linux, Ubuntu, and Windows Server.
+**Select Suitable AMI**: Choose an appropriate Amazon Machine Image (AMI) that aligns with your application requirements. Common choices include Amazon Linux, Ubuntu, and Windows Server.
 
    
 ### **Select an Instance Type**
 
-1. **Choose Hardware Configuration**: Select an instance type that suits your needs in terms of CPU, memory, storage, and networking capacity. For beginners, t2.micro, eligible for the free tier, is often recommended.
+**Choose Hardware Configuration**: Select an instance type that suits your needs in terms of CPU, memory, storage, and networking capacity. For beginners, t2.micro, eligible for the free tier, is often recommended.
 
    
 ### **Configure Instance Details**
 
-1. **Specify Configuration Settings**: Configure instance details such as the number of instances, network settings, and other parameters. Default settings are generally adequate for beginners.
+**Specify Configuration Settings**: Configure instance details such as the number of instances, network settings, and other parameters. Default settings are generally adequate for beginners.
 
    
 ### **Add Storage**
 
-1. **Define Storage Requirements**: Determine the size and type of storage needed for your instance. Default storage settings can typically be retained, although customization options are available based on specific needs.
+**Define Storage Requirements**: Determine the size and type of storage needed for your instance. Default storage settings can typically be retained, although customization options are available based on specific needs.
 
    
 ### **Add Tags**
 
-1. **Organize Resources with Tags**: Optionally, add tags to your instance using key-value pairs to facilitate management and organization of AWS resources.
+**Organize Resources with Tags**: Optionally, add tags to your instance using key-value pairs to facilitate management and organization of AWS resources.
 
    
 ### **Configure Security Group**
 
-1. **Set Up Security Measures**: Configure a security group to regulate traffic to your instance, ensuring network security. Default settings usually include allowing SSH (port 22) for Linux instances or RDP (port 3389) for Windows instances.
+**Set Up Security Measures**: Configure a security group to regulate traffic to your instance, ensuring network security. Default settings usually include allowing SSH (port 22) for Linux instances or RDP (port 3389) for Windows instances.
 
    
 ### **Review and Launch**
 
-1. **Confirm Instance Settings**: Review all configured settings for your instance and proceed to launch it.
+**Confirm Instance Settings**: Review all configured settings for your instance and proceed to launch it.
 
-2. **Key Pair Selection**: Choose or create a key pair for secure instance access. Download the key pair file (.pem) and securely store it for future use.
+**Key Pair Selection**: Choose or create a key pair for secure instance access. Download the key pair file (.pem) and securely store it for future use.
 
    
 ### **Access Your Instance**
 
-1. **Establish Connection**: Access your instance using the provided SSH command found in the instance details. 
+**Establish Connection**: Access your instance using the provided SSH command found in the instance details. 
 
-2. **Terminal Access**: Open a terminal window, navigate to the directory where your key pair file is stored, and connect to your instance using the SSH command.
+**Terminal Access**: Open a terminal window, navigate to the directory where your key pair file is stored, and connect to your instance using the SSH command.
 
    
 ## Follow This Tutorial
@@ -114,7 +125,7 @@ sudo certbot --nginx -d example.com -d www.example.com
 Follow this guide:
 [How To Secure Nginx with Let's Encrypt on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-22-04)
 
-### 6. Installing Node.js
+
 Follow these steps to install Node.js, clone your project repository, install dependencies, and set up MongoDB:
 
 Install Node.js:
@@ -168,8 +179,8 @@ cat: create a file , display, copy content of one file to another file
 touch: Create file
 clear: Clear terminal
 wget: Download file
-echo: Print any text that follows the command
-sudo apt-get update: Update packages
+echo: allows users to display text or variables in a variety of ways
+sudo apt-get update: Update packages 
 sudo apt-get upgrade: Upgrade packages
 chmod: Change file mode
 chown: Change file owner
